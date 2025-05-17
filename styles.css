@@ -1,0 +1,294 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+.container{
+  display: flex;
+  justify-content: flex-start; /* Changed from space-between */
+  gap: 40px;
+  background-color: rgb(0, 0, 0);
+  padding-top:25px;
+  padding-bottom: 22px;
+  align-items: center;
+}
+
+.nav{
+  margin-left: auto;
+  margin-right: 0px;
+  justify-content: space-between;
+  display: flex;
+  font-weight: bold;
+  font-size: 22px;
+}
+.nav-contact {
+  margin-left: auto;
+  padding-right: 40px;
+}
+
+.contact-info {
+  text-align: left;
+  color: white;
+  line-height: 1.4;
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin: 0;
+  padding: 2px 0;
+}
+
+
+.items  {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.items li {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  margin-right: 45px;
+  align-items: center;
+}
+
+.logotxt{
+  margin-left: 40px;
+  color: white;
+}
+
+.items li a{
+  text-decoration: none;
+  color: white;
+}
+
+.r-btn {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid rgb(10, 198, 219);
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(10, 198, 219);
+  position: relative;
+  transition: all .4s;
+  overflow: hidden;
+}
+
+.r-btn:hover {
+  color: rgb(10, 198, 219);
+  background: transparent;
+}
+
+.r-btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: rgb(10, 198, 219);
+  z-index: -1;
+  transition: all 1s;
+}
+
+.r-btn:hover::before {
+  width: 160%;
+}
+
+li a{
+  color:rgb(10, 198, 219);
+  transition: .4s;
+}
+
+li a:hover{
+  color:rgb(10, 198, 219);
+  text-shadow: 0 0 10px rgba(10, 198, 219, 0.5);
+}
+
+.reseption{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  height: 80vh;
+  color: white;
+}
+
+.content{
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+.heade{
+  font-size: 40px;
+}
+
+.txt {
+  font-size: 15px;
+}
+
+.img-container{
+  position: absolute;
+  right: 100px;
+  top: 90px;
+  width: 85vh;
+  height: 50vh;
+  border-radius: 5px;
+  rotate: 11deg;
+}
+
+.img-container img{
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.services{
+  padding-top: 30px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+.header{
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+/* Updated Services Section Styles */
+.blocks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 20px 116px;
+}
+
+.service-block {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(10, 198, 219, 0.3);
+}
+
+.service-item {
+  padding: 1.5rem;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid rgba(10, 198, 219, 0.2);
+  transition: all 0.3s ease;
+}
+
+.service-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-item:hover {
+  background: rgba(10, 198, 219, 0.1);
+  transform: translateX(10px);
+}
+
+.client {
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  font-size: 22px;
+}
+
+.clients-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.client-card {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.client-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-card:hover {
+  transform: scale(1.1);
+}
+
+.aboutus-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  color: white;
+  padding: 20px 80px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.infocontt {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.inff {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
