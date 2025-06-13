@@ -278,17 +278,3 @@ li a:hover{
   line-height: 1.6;
 }
 
-.infocontt {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  max-width: 600px;
-  margin: auto;
-}
-
-.inff {
-  padding: 10px;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
